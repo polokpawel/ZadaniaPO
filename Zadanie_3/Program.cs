@@ -4,54 +4,54 @@ namespace Zadanie_3
 {
     public class Employee
     {
-        private string imie;
-        private string nazwisko;
-        private string ulica;
-        private string miasto;
+        private string name;
+        private string lastname;
+        private string street;
+        private string city;
 
         protected void Read()
         {
             Console.WriteLine("Podaj imię pracownika:");
-            imie = Console.ReadLine();
+            name = Console.ReadLine();
 
             Console.WriteLine("Podaj nazwisko pracownika:");
-            nazwisko = Console.ReadLine();
+            lastname = Console.ReadLine();
 
             Console.WriteLine("Podaj ulicę pracownika:");
-            ulica = Console.ReadLine();
+            street = Console.ReadLine();
 
             Console.WriteLine("Podaj miasto pracownika:");
-            miasto = Console.ReadLine();
+            city = Console.ReadLine();
         }
 
         protected void Show()
         {
-            Console.WriteLine($"Imię: {imie}");
-            Console.WriteLine($"Nazwisko: {nazwisko}");
-            Console.WriteLine($"Ulica: {ulica}");
-            Console.WriteLine($"Miasto: {miasto}");
+            Console.WriteLine($"Imię: {name}");
+            Console.WriteLine($"Nazwisko: {lastname}");
+            Console.WriteLine($"Ulica: {street}");
+            Console.WriteLine($"Miasto: {city}");
         }
     }
 
     public class HR : Employee
     {
-        private string edukacja;
-        private string stanowisko;
+        private string education;
+        private string businessrole;
 
         public void Read1()
         {
             Read();
             Console.WriteLine("Wpisz wykszstałcenie:");
-            edukacja = Console.ReadLine();
+            education = Console.ReadLine();
             Console.WriteLine("Wpisz stanowisko:");
-            stanowisko = Console.ReadLine();
+            businessrole = Console.ReadLine();
         }
 
         public void Show1()
         {
             Show();
-            Console.WriteLine($"Wykształcenie: {edukacja}");
-            Console.WriteLine($"Stanowisko: {stanowisko}");
+            Console.WriteLine($"Wykształcenie: {education}");
+            Console.WriteLine($"Stanowisko: {businessrole}");
         }
     }
 

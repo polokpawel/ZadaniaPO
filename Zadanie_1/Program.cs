@@ -6,7 +6,7 @@ namespace Zadanie_1
     {
         private double a;
         private double b;
-        private double pole;
+        private double surface_area;
 
         public void read_data()
         {
@@ -19,14 +19,14 @@ namespace Zadanie_1
 
         public void process_data()
         {
-            pole = a * b;
+            surface_area = a * b;
         }
 
         public void show_results()
         {
             Console.WriteLine($"Długość boku a wynosi: {a:F2}");
             Console.WriteLine($"Długość boku b wynosi: {b:F2}");
-            Console.WriteLine($"Pole kwadratu: {pole:F2}");
+            Console.WriteLine($"Pole kwadratu: {surface_area:F2}");
         }
     }
 

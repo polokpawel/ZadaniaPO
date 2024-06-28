@@ -4,28 +4,28 @@ namespace Zadanie_2
 {
     public class Sorter
     {
-        private int[] liczba;
+        private int[] numbers;
 
         public void read_data()
         {
-            liczba = new int[6];
+            numbers = new int[6];
             Console.WriteLine("Podaj sześć liczb, aby je posortować:");
             for (var i = 0; i < 6; i++)
             {
                 Console.WriteLine($"Podaj liczbę {i + 1}:");
-                liczba[i] = Convert.ToInt32(Console.ReadLine());
+                numbers[i] = Convert.ToInt32(Console.ReadLine());
             }
         }
 
         public void process_data()
         {
-            Array.Sort(liczba);
+            Array.Sort(numbers);
         }
 
         public void show_results()
         {
             Console.WriteLine("Posortowane liczby:");
-            foreach (var number in liczba)
+            foreach (var number in numbers)
             {
                 Console.WriteLine(number);
             }
